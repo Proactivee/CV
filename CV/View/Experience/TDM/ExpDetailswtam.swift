@@ -29,6 +29,13 @@ struct ExpDetails: View {
                    
                     Link("Retrouver nos Aventures", destination: URL(string: "https://proactivee.github.io/wtam/")!)
                         .italic()
+                    Text("Suite au vol de notre PC nous n'avons pas pu continuer le site durant notre voyage")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+                        .foregroundColor(Color.red)
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom,1)
+                        .padding(/*@START_MENU_TOKEN@*/.horizontal, 15.0/*@END_MENU_TOKEN@*/)
                     
                     Divider()
                     

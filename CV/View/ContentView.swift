@@ -75,7 +75,7 @@ struct ContentView: View {
                     Divider()
                         .padding(.vertical, 20.0 )
                         
-                    Text("Mes Projets")
+                    Text("Skills")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.vertical, 20.0)

@@ -43,7 +43,7 @@ struct ExpDetailsZen: View {
                         
                         
                         VStack(alignment: .leading){
-                            Text("Respecter les plannings chantiers")
+                            Text("Respecter les Plannings Chantiers")
                                 .font(.title3)
                                 .fontWeight(.thin)
                                 .padding(.bottom,1)

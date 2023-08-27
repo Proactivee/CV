@@ -14,7 +14,16 @@ struct ExpList: View {
         
         
         NavigationView() {
-            List() {  
+            List() {
+                
+                NavigationLink {
+    ExpDetailsQuiz()
+                       
+                }
+label: {
+             ExpRowQuiz()
+            
+         }
                             NavigationLink {
                 ExpDetails()
                                    
@@ -63,7 +72,7 @@ struct ExpList: View {
 //            .navigationTitle("Mes Expériences")
                  
         }
-        .padding(.vertical)
+
         .frame(height: 600.0)
 
         
