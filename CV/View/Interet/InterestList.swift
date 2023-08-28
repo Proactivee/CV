@@ -95,6 +95,33 @@ struct InterestList: View {
         }
         .padding(.horizontal, 40.0)
         .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
+        
+        HStack(){
+            
+            Image(systemName: "airplane.departure")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fill)
+                .padding(.horizontal)
+                .frame(width: 50.0, height: 50.0)
+                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+            Spacer()
+            
+            VStack(){
+                Text("Voyage / Découverte")
+                    .font(.headline)
+                    .fontWeight(.thin)
+                    .padding(.bottom,1)
+                Text("Nouvelles Expériences Culturelles")
+                    .font(.headline)
+                    .fontWeight(.thin)
+                    .padding(.bottom,1)
+            }
+            
+          
+           
+        }
+        .padding(.horizontal, 40.0)
+        .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
     }
 }
 
