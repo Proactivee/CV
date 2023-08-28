@@ -75,7 +75,7 @@ struct ContentView: View {
                     Divider()
                         .padding(.vertical, 20.0 )
                         
-                    Text("Skills")
+                    Text("Compétences")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.vertical, 20.0)
@@ -87,6 +87,28 @@ struct ContentView: View {
                                     .shadow(radius: 1)
                                     
                             )
+                    
+                    SkillList()
+                        .padding(.vertical)
+                    
+                    Divider()
+                        .padding(.vertical, 20.0 )
+                        
+                    Text("Centre d'Intérêt")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding(.vertical, 20.0)
+                        .padding(.horizontal, 80)
+                        .overlay(
+                        
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(Color(hue: 1.0, saturation: 0.013, brightness: 0.914, opacity: 0.6), lineWidth: 1)
+                                    .shadow(radius: 1)
+                                    
+                            )
+                    InterestList()
+                        .padding(.vertical)
+                    
                     
                 }
             

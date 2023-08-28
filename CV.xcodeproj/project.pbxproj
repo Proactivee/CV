@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2320C1BC2A9CCA3C004F6DCA /* SkillList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2320C1BB2A9CCA3C004F6DCA /* SkillList.swift */; };
+		2320C1BE2A9CD561004F6DCA /* CommunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2320C1BD2A9CD561004F6DCA /* CommunicationView.swift */; };
+		2320C1C02A9CD749004F6DCA /* Langage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2320C1BF2A9CD749004F6DCA /* Langage.swift */; };
+		2320C1C42A9CDE83004F6DCA /* InterestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2320C1C32A9CDE83004F6DCA /* InterestList.swift */; };
 		2337BBA92A935CFE00F5AB06 /* formationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337BBA82A935CFE00F5AB06 /* formationList.swift */; };
 		2337BBAD2A93948C00F5AB06 /* ExpList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337BBAC2A93948C00F5AB06 /* ExpList.swift */; };
 		2337BBAF2A93961500F5AB06 /* ExpDetailswtam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337BBAE2A93961500F5AB06 /* ExpDetailswtam.swift */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2320C1BB2A9CCA3C004F6DCA /* SkillList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillList.swift; sourceTree = "<group>"; };
+		2320C1BD2A9CD561004F6DCA /* CommunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationView.swift; sourceTree = "<group>"; };
+		2320C1BF2A9CD749004F6DCA /* Langage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Langage.swift; sourceTree = "<group>"; };
+		2320C1C32A9CDE83004F6DCA /* InterestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestList.swift; sourceTree = "<group>"; };
 		2337BBA82A935CFE00F5AB06 /* formationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formationList.swift; sourceTree = "<group>"; };
 		2337BBAC2A93948C00F5AB06 /* ExpList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpList.swift; sourceTree = "<group>"; };
 		2337BBAE2A93961500F5AB06 /* ExpDetailswtam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpDetailswtam.swift; sourceTree = "<group>"; };
@@ -99,6 +107,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2320C1BA2A9CCA10004F6DCA /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				2320C1BB2A9CCA3C004F6DCA /* SkillList.swift */,
+				2320C1BD2A9CD561004F6DCA /* CommunicationView.swift */,
+				2320C1BF2A9CD749004F6DCA /* Langage.swift */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		2320C1C12A9CDDEE004F6DCA /* Interet */ = {
+			isa = PBXGroup;
+			children = (
+				2320C1C32A9CDE83004F6DCA /* InterestList.swift */,
+			);
+			path = Interet;
+			sourceTree = "<group>";
+		};
+		2320C1C22A9CDE24004F6DCA /* Formation */ = {
+			isa = PBXGroup;
+			children = (
+				2337BBA82A935CFE00F5AB06 /* formationList.swift */,
+			);
+			path = Formation;
+			sourceTree = "<group>";
+		};
 		2337BBAA2A9393FE00F5AB06 /* Experience */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,9 +252,11 @@
 			isa = PBXGroup;
 			children = (
 				23CB7E072A92650400208058 /* ContentView.swift */,
-				2337BBA82A935CFE00F5AB06 /* formationList.swift */,
 				23CB7E302A9265DD00208058 /* CircleMe.swift */,
+				2320C1C22A9CDE24004F6DCA /* Formation */,
 				2337BBAA2A9393FE00F5AB06 /* Experience */,
+				2320C1BA2A9CCA10004F6DCA /* Skills */,
+				2320C1C12A9CDDEE004F6DCA /* Interet */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,13 +397,17 @@
 				2337BBC52A98AC7F00F5AB06 /* ExpDetailsCond.swift in Sources */,
 				23975F6E2A9B83D200AA301F /* ExpRowQuiz.swift in Sources */,
 				2337BBAD2A93948C00F5AB06 /* ExpList.swift in Sources */,
+				2320C1BC2A9CCA3C004F6DCA /* SkillList.swift in Sources */,
 				2337BBBE2A98AA8400F5AB06 /* ExpRowZen.swift in Sources */,
 				2337BBB72A94C70C00F5AB06 /* openRowOCR.swift in Sources */,
 				2337BBB32A93966300F5AB06 /* ExpRowwtam.swift in Sources */,
+				2320C1C02A9CD749004F6DCA /* Langage.swift in Sources */,
 				23CB7E082A92650400208058 /* ContentView.swift in Sources */,
 				2337BBA92A935CFE00F5AB06 /* formationList.swift in Sources */,
 				23CB7E062A92650400208058 /* CVApp.swift in Sources */,
+				2320C1BE2A9CD561004F6DCA /* CommunicationView.swift in Sources */,
 				2337BBAF2A93961500F5AB06 /* ExpDetailswtam.swift in Sources */,
+				2320C1C42A9CDE83004F6DCA /* InterestList.swift in Sources */,
 				2337BBC02A98AA9F00F5AB06 /* ExpDetailsZen.swift in Sources */,
 				23CB7E312A9265DD00208058 /* CircleMe.swift in Sources */,
 				23975F702A9B83E500AA301F /* ExpDetailsQuiz.swift in Sources */,

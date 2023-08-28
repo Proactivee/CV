@@ -53,7 +53,7 @@ struct ExpDetailsQuiz: View {
                             
                             
                             
-                            Text("Animation au Interaction Avec l'Utilisateur - UIView")
+                            Text("Animation/Interaction avec l'Utilisateur - UIView - UIGesture")
                                 .font(.title3)
                                 .fontWeight(.thin)
                                 .padding(.bottom,1)
