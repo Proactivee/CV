@@ -19,11 +19,7 @@ struct ContentView: View {
                     ExpList()
 
                     SkillList()               
-                    
-                    Divider()
-                        .padding(.vertical, 20.0 )
-                    
-
+            
                     InterestList()
                         .padding(.vertical)
                      
