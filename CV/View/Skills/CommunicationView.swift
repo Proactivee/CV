@@ -137,6 +137,11 @@ struct CommunicationView: View {
     
 }
 
-#Preview {
-    CommunicationView()
+
+
+struct Communication_Previews: PreviewProvider {
+    static var previews: some View {
+        CommunicationView()
+    }
 }
+

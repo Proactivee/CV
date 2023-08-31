@@ -22,13 +22,20 @@ struct CircleMe: View {
                 }
                 .shadow(radius: 7)
                 .offset(y : -130)
+           
+            
+            
+            
         }
-        
+       
+     
     }
-}
-
-struct CircleMe_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleMe()
+        
+       
+    
+    struct CircleMe_Previews: PreviewProvider {
+        static var previews: some View {
+            CircleMe()
+        }
     }
 }

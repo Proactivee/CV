@@ -365,6 +365,11 @@ struct Langage: View {
     
 }
 
-#Preview {
-    Langage()
+
+struct Langage_Previews: PreviewProvider {
+    static var previews: some View {
+        Langage()
+    }
 }
+
+

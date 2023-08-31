@@ -10,6 +10,19 @@ import SwiftUI
 struct SkillList: View {
     var body: some View {
         
+        Text("Compétences")
+            .font(.title2)
+            .fontWeight(.semibold)
+            .padding(.vertical, 20.0)
+            .padding(.horizontal, 80)
+            .overlay(
+                
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color(hue: 1.0, saturation: 0.013, brightness: 0.914, opacity: 0.6), lineWidth: 1)
+                    .shadow(radius: 1)
+                
+            )
+        
         VStack{
             
             CommunicationView()
@@ -21,6 +34,11 @@ struct SkillList: View {
     
 }
 
-#Preview {
-    SkillList()
+
+struct SkillList_Previews: PreviewProvider {
+    static var previews: some View {
+        SkillList()
+    }
 }
+
+
