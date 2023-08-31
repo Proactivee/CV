@@ -9,32 +9,28 @@ import SwiftUI
 
 struct Langage: View {
     var body: some View {
-        HStack(){
+        HStack {
             Text("Langage Informatique")
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
                 .padding([.top, .bottom, .trailing])
-            
-            
+
             Image(systemName: "laptopcomputer.and.iphone")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
-            
-            
+
         }
-        
-        
-        VStack(alignment: .leading){
-            HStack{
+
+        VStack(alignment: .leading) {
+            HStack {
                 Text("Swift")
                     .font(.title3)
                     .fontWeight(.thin)
-                    .padding(.bottom,1)
+                    .padding(.bottom, 1)
                 Spacer()
                 Image(systemName: "star.fill")
                     .resizable(resizingMode: .stretch)
@@ -42,7 +38,7 @@ struct Langage: View {
                     .padding(.horizontal)
                     .frame(width: 20.0, height: 20.0)
                     .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                
+
                 Image(systemName: "star.fill")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fill)
@@ -73,15 +69,15 @@ struct Langage: View {
                     .padding(.horizontal)
                     .frame(width: 20.0, height: 20.0)
                     .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                
+
             }
             .padding(.horizontal, 50.0)
-            
-            HStack{
+
+            HStack {
                 Text("SwiftUI")
                     .font(.title3)
                     .fontWeight(.thin)
-                    .padding(.bottom,1)
+                    .padding(.bottom, 1)
                 Spacer()
                 Image(systemName: "star.fill")
                     .resizable(resizingMode: .stretch)
@@ -89,7 +85,7 @@ struct Langage: View {
                     .padding(.horizontal)
                     .frame(width: 20.0, height: 20.0)
                     .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                
+
                 Image(systemName: "star.fill")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fill)
@@ -120,16 +116,16 @@ struct Langage: View {
                     .padding(.horizontal)
                     .frame(width: 20.0, height: 20.0)
                     .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                
+
             }
             .padding(.horizontal, 50.0)
-            
+
         }
-        HStack{
+        HStack {
             Text("Javascript")
                 .font(.title3)
                 .fontWeight(.thin)
-                .padding(.bottom,1)
+                .padding(.bottom, 1)
             Spacer()
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
@@ -137,7 +133,7 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
@@ -168,16 +164,15 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
         }
         .padding(.horizontal, 50.0)
-    
-    
-        HStack{
+
+        HStack {
             Text("React")
                 .font(.title3)
                 .fontWeight(.thin)
-                .padding(.bottom,1)
+                .padding(.bottom, 1)
             Spacer()
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
@@ -185,7 +180,7 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
@@ -216,15 +211,15 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
         }
         .padding(.horizontal, 50.0)
-        
-        HStack{
+
+        HStack {
             Text("HTML/CSS")
                 .font(.title3)
                 .fontWeight(.thin)
-                .padding(.bottom,1)
+                .padding(.bottom, 1)
             Spacer()
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
@@ -232,7 +227,7 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
@@ -263,15 +258,15 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
         }
         .padding(.horizontal, 50.0)
-        
-        HStack{
+
+        HStack {
             Text("Node.JS")
                 .font(.title3)
                 .fontWeight(.thin)
-                .padding(.bottom,1)
+                .padding(.bottom, 1)
             Spacer()
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
@@ -279,7 +274,7 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
@@ -310,15 +305,15 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
         }
         .padding(.horizontal, 50.0)
-        
-        HStack{
+
+        HStack {
             Text("Mongo DB")
                 .font(.title3)
                 .fontWeight(.thin)
-                .padding(.bottom,1)
+                .padding(.bottom, 1)
             Spacer()
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
@@ -326,7 +321,7 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
             Image(systemName: "star.fill")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
@@ -357,19 +352,16 @@ struct Langage: View {
                 .padding(.horizontal)
                 .frame(width: 20.0, height: 20.0)
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            
+
         }
         .padding(.horizontal, 50.0)
- 
-    }
-    
-}
 
+    }
+
+}
 
 struct Langage_Previews: PreviewProvider {
     static var previews: some View {
         Langage()
     }
 }
-
-

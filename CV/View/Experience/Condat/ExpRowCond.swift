@@ -8,29 +8,28 @@
 import SwiftUI
 
 struct ExpRowCond: View {
-    
-    var data = ["condat", "Condat","2017-2020"]
+
+    var data = ["condat", "Condat", "2017-2020"]
     var body: some View {
-        VStack(alignment: .leading){
-            
+        VStack(alignment: .leading) {
+
             HStack {
-                
+
                 Image("\(data[0])")
                     .resizable()
                     .frame(width: 50, height: 50)
-                VStack(alignment: .leading){
-                    Text ("\(data[1]) ")
+                VStack(alignment: .leading) {
+                    Text("\(data[1]) ")
                         .font(.title2)
-                    
-                    Text ("\(data[2])")
+
+                    Text("\(data[2])")
                         .font(.subheadline)
                         .foregroundColor(Color.gray)
-                    
+
                 }
-                
+
             }
-            
-            
+
                         }
     }
 }

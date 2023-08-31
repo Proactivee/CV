@@ -9,30 +9,24 @@ import SwiftUI
 
 struct CircleMe: View {
     var body: some View {
-        VStack{
+        VStack {
             Image("temple")
                 .resizable()
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
-            
+
             Image("moi")
                 .clipShape(Circle())
-                .overlay{
+                .overlay {
                     Circle().stroke(.white, lineWidth: 4)
                 }
                 .shadow(radius: 7)
-                .offset(y : -130)
-           
-            
-            
-            
+                .offset(y: -130)
+
         }
-       
-     
+
     }
-        
-       
-    
+
     struct CircleMe_Previews: PreviewProvider {
         static var previews: some View {
             CircleMe()
