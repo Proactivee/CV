@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Langage: View {
     var body: some View {
+
         HStack {
             Text("Langage Informatique")
                 .font(.title3)

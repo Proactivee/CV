@@ -90,7 +90,7 @@ struct InterestList: View {
                     .font(.headline)
                     .fontWeight(.thin)
                     .padding(.bottom, 1)
-                Text("Rénovation d'Appartement")
+                Text("Rénovation")
                     .font(.headline)
                     .fontWeight(.thin)
                     .padding(.bottom, 1)
