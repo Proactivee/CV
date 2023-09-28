@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct Langage: View {
+
+    let evaluationLanguage: [String: Int] =
+    ["Swift": 3,
+     "Javascript": 4,
+     "React": 4,
+     "HTML/CSS": 4,
+     "Node.Js": 3,
+     "MongoDB": 3
+    ]
+
     var body: some View {
 
         HStack {
@@ -25,344 +35,47 @@ struct Langage: View {
                 .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
 
         }
+        VStack {
+            ForEach(evaluationLanguage.sorted(by: >), id: \.key) { key, value in
 
-        VStack(alignment: .leading) {
-            HStack {
-                Text("Swift")
-                    .font(.title3)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
-                Spacer()
-                Image(systemName: "star.fill")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("\(key)")
+                            .font(.title3)
+                            .fontWeight(.thin)
+                            .padding(.bottom, 1)
+                        Spacer()
 
-                Image(systemName: "star.fill")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star.fill")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+                        ForEach(1..<7) { starNumber in
 
+                            if value < starNumber {
+
+                                Image(systemName: "star")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.horizontal)
+                                    .frame(width: 20.0, height: 20.0)
+                                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+
+                            } else {
+                                Image(systemName: "star.fill")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.horizontal)
+                                    .frame(width: 20.0, height: 20.0)
+                                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+                            }
+
+                        }
+                    }
+                }
             }
-            .padding(.horizontal, 50.0)
-
-            HStack {
-                Text("SwiftUI")
-                    .font(.title3)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
-                Spacer()
-                Image(systemName: "star.fill")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-                Image(systemName: "star.fill")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star.fill")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-                Image(systemName: "star")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.horizontal)
-                    .frame(width: 20.0, height: 20.0)
-                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-            }
-            .padding(.horizontal, 50.0)
-
         }
-        HStack {
-            Text("Javascript")
-                .font(.title3)
-                .fontWeight(.thin)
-                .padding(.bottom, 1)
-            Spacer()
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-        }
-        .padding(.horizontal, 50.0)
-
-        HStack {
-            Text("React")
-                .font(.title3)
-                .fontWeight(.thin)
-                .padding(.bottom, 1)
-            Spacer()
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-        }
-        .padding(.horizontal, 50.0)
-
-        HStack {
-            Text("HTML/CSS")
-                .font(.title3)
-                .fontWeight(.thin)
-                .padding(.bottom, 1)
-            Spacer()
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-        }
-        .padding(.horizontal, 50.0)
-
-        HStack {
-            Text("Node.JS")
-                .font(.title3)
-                .fontWeight(.thin)
-                .padding(.bottom, 1)
-            Spacer()
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-        }
-        .padding(.horizontal, 50.0)
-
-        HStack {
-            Text("Mongo DB")
-                .font(.title3)
-                .fontWeight(.thin)
-                .padding(.bottom, 1)
-            Spacer()
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star.fill")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Image(systemName: "star")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 20.0, height: 20.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-
-        }
-        .padding(.horizontal, 50.0)
+        .padding(.horizontal, 40.0)
 
     }
-
 }
 
-struct Langage_Previews: PreviewProvider {
-    static var previews: some View {
-        Langage()
-    }
+#Preview {
+    Langage()
 }

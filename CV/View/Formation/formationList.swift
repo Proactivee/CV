@@ -98,3 +98,7 @@ struct FormationList: View {
         }
     }
 }
+
+#Preview {
+    FormationList()
+}

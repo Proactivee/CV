@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct InterestList: View {
+    @State var isExpandedApple = false
+    @State var isExpandedSport = false
+    @State var isExpandedBuilding = false
+    @State var isExpandedDiscover = false
+
     var body: some View {
         VStack {
+
             Divider()
                 .padding(.vertical, 20.0 )
 
@@ -25,110 +31,174 @@ struct InterestList: View {
                         .shadow(radius: 1)
 
                 )}
+
         HStack {
+            DisclosureGroup(
+        isExpanded: $isExpandedApple,
+        content: {
+                VStack {
+                    Text("Réparation Hardware / Software")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
 
-            Image(systemName: "apple.logo")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 50.0, height: 50.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Spacer()
+                    Text("iOS / VisionPro")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                }
 
-            VStack {
-                Text("Réparation Hardware / Software")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
-                Text("iOS / VisionOS")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
+                .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
+
+            }, label: {
+                HStack(alignment: .center) {
+                Image(systemName: "apple.logo")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.horizontal)
+                    .frame(width: 50.0, height: 50.0)
+                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+                    Spacer()
+                Text("Apple")
+                    .font(.title)
+                    Spacer()
+
             }
 
+        })
+            .tint(.gray)
+            .padding()
         }
-        .padding(.horizontal, 40.0)
+        .background(RoundedRectangle(cornerRadius: 20)
+            .fill(Color.cyan)
+            .opacity(0.1))
+        .padding(.horizontal, 30.0)
         .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
 
         HStack {
+            DisclosureGroup(
+        isExpanded: $isExpandedSport,
+        content: {
+                VStack {
+                    Text("Squash / Tennis / Badminton")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                    Text("Course à pied / Ski")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                }
+                    .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
+            }, label: {
+                HStack(alignment: .center) {
+                Image(systemName: "figure.squash")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.horizontal)
+                    .frame(width: 50.0, height: 50.0)
+                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
 
-            Image(systemName: "figure.squash")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 50.0, height: 50.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Spacer()
-
-            VStack {
-                Text("Squash / Tennis / Badminton")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
-                Text("Course à pied / Ski")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
+                    Spacer()
+                Text("Sport")
+                    .font(.title)
+                    Spacer()
             }
 
+        })
+            .tint(.gray)
+            .padding()
+
         }
-        .padding(.horizontal, 40.0)
+        .background(RoundedRectangle(cornerRadius: 20)
+            .fill(Color.orange)
+            .opacity(0.1))
+        .padding(.horizontal, 30.0)
         .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
 
         HStack {
-
-            Image(systemName: "hammer")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 50.0, height: 50.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Spacer()
-
-            VStack {
-                Text("Construction Meuble / Instrument ")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
-                Text("Rénovation")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
+            DisclosureGroup(
+        isExpanded: $isExpandedBuilding,
+        content: {
+                VStack {
+                    Text("Meuble / Instrument ")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                    Text("Rénovation")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                }
+                    .padding(.vertical, 10.0)
+            }, label: {
+                HStack(alignment: .center) {
+                Image(systemName: "hammer")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.horizontal)
+                    .frame(width: 50.0, height: 50.0)
+                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+                    Spacer()
+                Text("Construction")
+                    .font(.title)
+                    .lineLimit(1)
+                    Spacer()
             }
 
+        })
+            .tint(.gray)
+            .padding()
         }
-        .padding(.horizontal, 40.0)
+        .background(RoundedRectangle(cornerRadius: 20)
+            .fill(Color.purple)
+            .opacity(0.1))
+        .padding(.horizontal, 30.0)
         .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
 
         HStack {
-
-            Image(systemName: "airplane.departure")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .padding(.horizontal)
-                .frame(width: 50.0, height: 50.0)
-                .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
-            Spacer()
-
-            VStack {
-                Text("Voyage / Découverte")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
-                Text("Nouvelles Expériences Culturelles")
-                    .font(.headline)
-                    .fontWeight(.thin)
-                    .padding(.bottom, 1)
+            DisclosureGroup(
+        isExpanded: $isExpandedDiscover,
+        content: {
+                VStack {
+                    Text("Voyage / Tour du monde")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                    Text("Nouvelles Expériences Culturelles")
+                        .font(.headline)
+                        .fontWeight(.thin)
+                        .padding(.bottom, 1)
+                }
+                    .padding(.vertical, 10.0)
+            }, label: {
+                HStack(alignment: .center) {
+                Image(systemName: "airplane.departure")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.horizontal)
+                    .frame(width: 50.0, height: 50.0)
+                    .foregroundColor(Color(hue: 0.488, saturation: 0.037, brightness: 0.352))
+                    Spacer()
+                Text("Exploration")
+                    .font(.title)
+                    .lineLimit(1)
+                    Spacer()
             }
 
+        })
+            .tint(.gray)
+            .padding()
         }
-        .padding(.horizontal, 40.0)
+        .background(RoundedRectangle(cornerRadius: 20)
+            .fill(Color.green)
+            .opacity(0.1))
+        .padding(.horizontal, 30.0)
         .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
+
     }
 }
 
-struct Interest_Previews: PreviewProvider {
-    static var previews: some View {
-        InterestList()
-    }
+#Preview {
+    InterestList()
 }
