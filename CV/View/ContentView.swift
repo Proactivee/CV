@@ -22,6 +22,8 @@ struct ContentView: View {
 
                     InterestList()
 
+                    JoinMe()
+
                 }
 
                 .offset(y: -120)

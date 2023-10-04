@@ -21,6 +21,7 @@
 		2337BBC02A98AA9F00F5AB06 /* ExpDetailsZen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337BBBF2A98AA9F00F5AB06 /* ExpDetailsZen.swift */; };
 		2337BBC32A98AC6B00F5AB06 /* ExpRowCond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337BBC22A98AC6B00F5AB06 /* ExpRowCond.swift */; };
 		2337BBC52A98AC7F00F5AB06 /* ExpDetailsCond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337BBC42A98AC7F00F5AB06 /* ExpDetailsCond.swift */; };
+		23583A562AC5CD0E00475856 /* JoinMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23583A552AC5CD0E00475856 /* JoinMe.swift */; };
 		23975F6E2A9B83D200AA301F /* ExpRowQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23975F6D2A9B83D200AA301F /* ExpRowQuiz.swift */; };
 		23975F702A9B83E500AA301F /* ExpDetailsQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23975F6F2A9B83E500AA301F /* ExpDetailsQuiz.swift */; };
 		23975F732A9B97E600AA301F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23975F722A9B97E600AA301F /* Launch Screen.storyboard */; };
@@ -66,6 +67,7 @@
 		2337BBBF2A98AA9F00F5AB06 /* ExpDetailsZen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpDetailsZen.swift; sourceTree = "<group>"; };
 		2337BBC22A98AC6B00F5AB06 /* ExpRowCond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpRowCond.swift; sourceTree = "<group>"; };
 		2337BBC42A98AC7F00F5AB06 /* ExpDetailsCond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpDetailsCond.swift; sourceTree = "<group>"; };
+		23583A552AC5CD0E00475856 /* JoinMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinMe.swift; sourceTree = "<group>"; };
 		23975F6D2A9B83D200AA301F /* ExpRowQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpRowQuiz.swift; sourceTree = "<group>"; };
 		23975F6F2A9B83E500AA301F /* ExpDetailsQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpDetailsQuiz.swift; sourceTree = "<group>"; };
 		23975F722A9B97E600AA301F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -182,6 +184,14 @@
 			path = Condat;
 			sourceTree = "<group>";
 		};
+		23583A542AC5CCFD00475856 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				23583A552AC5CD0E00475856 /* JoinMe.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
 		23975F6C2A9B83B100AA301F /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +263,7 @@
 			children = (
 				23CB7E072A92650400208058 /* ContentView.swift */,
 				23CB7E302A9265DD00208058 /* CircleMe.swift */,
+				23583A542AC5CCFD00475856 /* Join */,
 				2320C1C22A9CDE24004F6DCA /* Formation */,
 				2337BBAA2A9393FE00F5AB06 /* Experience */,
 				2320C1BA2A9CCA10004F6DCA /* Skills */,
@@ -431,6 +442,7 @@
 				2337BBAF2A93961500F5AB06 /* ExpDetailswtam.swift in Sources */,
 				2320C1C42A9CDE83004F6DCA /* InterestList.swift in Sources */,
 				2337BBC02A98AA9F00F5AB06 /* ExpDetailsZen.swift in Sources */,
+				23583A562AC5CD0E00475856 /* JoinMe.swift in Sources */,
 				23CB7E312A9265DD00208058 /* CircleMe.swift in Sources */,
 				23975F702A9B83E500AA301F /* ExpDetailsQuiz.swift in Sources */,
 			);
